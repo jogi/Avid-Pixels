@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="container-fluid m-t-3">
+    <div class="row">
+        {% for album in site.albums %}
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <figure class="figure gallery">
+                <a href="{{ album.url }}">
+                    <img src="{{ album.thumbnail }}" class="figure-img img-fluid lazy" alt="{{ album.title }}">
+                </a>
+                <figcaption class="figure-caption text-xs-center text-uppercase">{{ album.title }}</figcaption>
+            </figure>
+        </div>
+        {% endfor %}
+    </div>
+</div>
