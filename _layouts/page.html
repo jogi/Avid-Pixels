@@ -1,14 +1,13 @@
 ---
 layout: default
 ---
-<article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-3 offset-xl-3 col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-6 col-xs-12">
+            <img src="{{ page.image }}" class="img-fluid">
+        </div>
+        <div class="col-xl-3 col-lg-5 col-md-5 col-sm-6 col-xs-12 p-l-1 lead">
+            {{ content }}
+        </div>
+    </div>
+</div>
