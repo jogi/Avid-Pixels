@@ -4,7 +4,7 @@ title: Ahmedabad
 thumbnail: /albums/ahmedabad/album_thumb.jpg
 images:
   - title: Adalaj ni Vav
-    path: 'https://c2.staticflickr.com/8/7511/16050510862_1a274dd56e_h_d.jpg'
+    path: '/albums/ahmedabad/ahmedabad-1_3600x2400.jpg'
   - title: Sabarmati Riverfront
     description: 'Sabarmati Riverfront is a waterfront developed along banks of Sabarmati river in the city of Ahmedabad, India.'
     path: '/albums/ahmedabad/ahmedabad-2_3600x2400.jpg'
@@ -24,4 +24,3 @@ images:
   - path: '/albums/ahmedabad/ahmedabad-13_3600x2400.jpg'
   - path: '/albums/ahmedabad/ahmedabad-14_3600x2400.jpg'
 ---
-
