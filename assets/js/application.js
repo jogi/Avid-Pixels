@@ -16,8 +16,8 @@
 
                     var item = {
                         src     : $href,
-                        w       : 1600,
-                        h       : 1200,
+                        w       : $size[1],
+                        h       : $size[2],
                         title   : $title
                     };
 
@@ -30,7 +30,7 @@
 
         $.each(items, function(index, value) {
             image[index]     = new Image();
-            image[index].src = value['src'];
+            image[index].src = value.src;
         });
 
         $pic.on('click', 'a', function(event) {
