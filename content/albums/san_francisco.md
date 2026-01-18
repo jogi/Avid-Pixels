@@ -1,0 +1,76 @@
+---
+title: San Francisco
+date: 2016-02-10
+thumbnail: /albums/san_francisco/album_thumb.jpg
+images:
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-1.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-1.jpg'
+  width: 3600
+  height: 2400
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-2.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-2.jpg'
+  width: 3600
+  height: 2400
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-3.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-3.jpg'
+  width: 3600
+  height: 2400
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-4.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-4.jpg'
+  width: 3600
+  height: 2400
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-5.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-5.jpg'
+  width: 3600
+  height: 2400
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-6.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-6.jpg'
+  width: 3600
+  height: 2400
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-7.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-7.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-8.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-8.jpg'
+  width: 3600
+  height: 2394
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-9.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-9.jpg'
+  width: 3600
+  height: 2394
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-10.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-10.jpg'
+  width: 2394
+  height: 3600
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-11.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-11.jpg'
+  width: 3600
+  height: 2394
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-12.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-12.jpg'
+  width: 3600
+  height: 2394
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-13.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-13.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/san_francisco/original/san_francisco-14.jpg'
+  path_medium: '/albums/san_francisco/medium/san_francisco-14.jpg'
+  width: 3600
+  height: 2026
+---

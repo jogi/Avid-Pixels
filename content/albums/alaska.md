@@ -1,0 +1,106 @@
+---
+title: Alaska
+date: 2016-02-10
+thumbnail: /albums/alaska/album_thumb.jpg
+images:
+- title:
+  path_original: '/albums/alaska/original/alaska-1.jpg'
+  path_medium: '/albums/alaska/medium/alaska-1.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-2.jpg'
+  path_medium: '/albums/alaska/medium/alaska-2.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-3.jpg'
+  path_medium: '/albums/alaska/medium/alaska-3.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-4.jpg'
+  path_medium: '/albums/alaska/medium/alaska-4.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-5.jpg'
+  path_medium: '/albums/alaska/medium/alaska-5.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-6.jpg'
+  path_medium: '/albums/alaska/medium/alaska-6.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-7.jpg'
+  path_medium: '/albums/alaska/medium/alaska-7.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-8.jpg'
+  path_medium: '/albums/alaska/medium/alaska-8.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-9.jpg'
+  path_medium: '/albums/alaska/medium/alaska-9.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-10.jpg'
+  path_medium: '/albums/alaska/medium/alaska-10.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-11.jpg'
+  path_medium: '/albums/alaska/medium/alaska-11.jpg'
+  width: 2952
+  height: 1978
+- title:
+  path_original: '/albums/alaska/original/alaska-12.jpg'
+  path_medium: '/albums/alaska/medium/alaska-12.jpg'
+  width: 3000
+  height: 680
+- title:
+  path_original: '/albums/alaska/original/alaska-13.jpg'
+  path_medium: '/albums/alaska/medium/alaska-13.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-14.jpg'
+  path_medium: '/albums/alaska/medium/alaska-14.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-15.jpg'
+  path_medium: '/albums/alaska/medium/alaska-15.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-16.jpg'
+  path_medium: '/albums/alaska/medium/alaska-16.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-17.jpg'
+  path_medium: '/albums/alaska/medium/alaska-17.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-18.jpg'
+  path_medium: '/albums/alaska/medium/alaska-18.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-19.jpg'
+  path_medium: '/albums/alaska/medium/alaska-19.jpg'
+  width: 3000
+  height: 1688
+- title:
+  path_original: '/albums/alaska/original/alaska-20.jpg'
+  path_medium: '/albums/alaska/medium/alaska-20.jpg'
+  width: 3000
+  height: 1688
+---

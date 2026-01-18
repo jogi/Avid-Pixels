@@ -1,0 +1,86 @@
+---
+title: Bora Bora
+date: 2016-02-10
+thumbnail: /albums/bora_bora/album_thumb.jpg
+images:
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-1.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-1.jpg'
+  width: 3600
+  height: 2400
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-2.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-2.jpg'
+  width: 3600
+  height: 2400
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-3.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-3.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-4.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-4.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-5.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-5.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-6.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-6.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-7.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-7.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-8.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-8.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-9.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-9.jpg'
+  width: 3600
+  height: 2400
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-10.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-10.jpg'
+  width: 3600
+  height: 2400
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-11.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-11.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-12.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-12.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-13.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-13.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-14.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-14.jpg'
+  width: 3600
+  height: 2271
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-15.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-15.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/bora_bora/original/bora_bora-16.jpg'
+  path_medium: '/albums/bora_bora/medium/bora_bora-16.jpg'
+  width: 3600
+  height: 2026
+---

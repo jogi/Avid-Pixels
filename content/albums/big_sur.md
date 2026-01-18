@@ -1,0 +1,56 @@
+---
+title: Big Sur
+date: 2016-02-10
+thumbnail: /albums/big_sur/album_thumb.jpg
+images:
+- title:
+  path_original: '/albums/big_sur/original/big_sur-1.jpg'
+  path_medium: '/albums/big_sur/medium/big_sur-1.jpg'
+  width: 3000
+  height: 2000
+- title:
+  path_original: '/albums/big_sur/original/big_sur-2.jpg'
+  path_medium: '/albums/big_sur/medium/big_sur-2.jpg'
+  width: 3000
+  height: 2000
+- title:
+  path_original: '/albums/big_sur/original/big_sur-3.jpg'
+  path_medium: '/albums/big_sur/medium/big_sur-3.jpg'
+  width: 3000
+  height: 2000
+- title:
+  path_original: '/albums/big_sur/original/big_sur-4.jpg'
+  path_medium: '/albums/big_sur/medium/big_sur-4.jpg'
+  width: 3000
+  height: 2000
+- title:
+  path_original: '/albums/big_sur/original/big_sur-5.jpg'
+  path_medium: '/albums/big_sur/medium/big_sur-5.jpg'
+  width: 3000
+  height: 2000
+- title:
+  path_original: '/albums/big_sur/original/big_sur-6.jpg'
+  path_medium: '/albums/big_sur/medium/big_sur-6.jpg'
+  width: 3000
+  height: 2000
+- title:
+  path_original: '/albums/big_sur/original/big_sur-7.jpg'
+  path_medium: '/albums/big_sur/medium/big_sur-7.jpg'
+  width: 3000
+  height: 1995
+- title:
+  path_original: '/albums/big_sur/original/big_sur-8.jpg'
+  path_medium: '/albums/big_sur/medium/big_sur-8.jpg'
+  width: 3000
+  height: 1995
+- title:
+  path_original: '/albums/big_sur/original/big_sur-9.jpg'
+  path_medium: '/albums/big_sur/medium/big_sur-9.jpg'
+  width: 3000
+  height: 1995
+- title:
+  path_original: '/albums/big_sur/original/big_sur-10.jpg'
+  path_medium: '/albums/big_sur/medium/big_sur-10.jpg'
+  width: 3000
+  height: 1995
+---

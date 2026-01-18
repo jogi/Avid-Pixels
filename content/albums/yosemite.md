@@ -1,0 +1,82 @@
+---
+title: Yosemite
+date: 2016-02-10
+description: Yosemite is the most amazing place on Earth. My absolute favorite. I have been there several times. But every time I go there it is a different experience.
+thumbnail: /albums/yosemite/album_thumb.jpg
+images:
+- title:
+  path_original: '/albums/yosemite/original/yosemite-1.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-1.jpg'
+  width: 3600
+  height: 2400
+- title:
+  path_original: '/albums/yosemite/original/yosemite-2.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-2.jpg'
+  width: 2048
+  height: 1362
+- title:
+  path_original: '/albums/yosemite/original/yosemite-3.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-3.jpg'
+  width: 866
+  height: 576
+- title:
+  path_original: '/albums/yosemite/original/yosemite-4.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-4.jpg'
+  width: 3600
+  height: 2400
+- title:
+  path_original: '/albums/yosemite/original/yosemite-5.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-5.jpg'
+  width: 3600
+  height: 2394
+- title:
+  path_original: '/albums/yosemite/original/yosemite-6.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-6.jpg'
+  width: 2394
+  height: 3600
+- title:
+  path_original: '/albums/yosemite/original/yosemite-7.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-7.jpg'
+  width: 3600
+  height: 2394
+- title:
+  path_original: '/albums/yosemite/original/yosemite-8.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-8.jpg'
+  width: 3600
+  height: 2394
+- title:
+  path_original: '/albums/yosemite/original/yosemite-9.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-9.jpg'
+  width: 3600
+  height: 2394
+- title:
+  path_original: '/albums/yosemite/original/yosemite-10.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-10.jpg'
+  width: 3600
+  height: 2394
+- title:
+  path_original: '/albums/yosemite/original/yosemite-11.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-11.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/yosemite/original/yosemite-12.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-12.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/yosemite/original/yosemite-13.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-13.jpg'
+  width: 3600
+  height: 2026
+- title:
+  path_original: '/albums/yosemite/original/yosemite-14.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-14.jpg'
+  width: 3600
+  height: 1787
+- title:
+  path_original: '/albums/yosemite/original/yosemite-15.jpg'
+  path_medium: '/albums/yosemite/medium/yosemite-15.jpg'
+  width: 3600
+  height: 2026
+---
