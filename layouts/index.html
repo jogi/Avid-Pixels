@@ -4,7 +4,7 @@
     {{ range $albums }}
     <div class="album-item">
         <a href="{{ .Permalink }}">
-            <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" class="album-thumbnail">
+            <img src="{{ .Params.thumbnail | absURL }}" alt="{{ .Title }}" class="album-thumbnail">
             <h3 class="album-title">{{ .Title }}</h3>
         </a>
     </div>
