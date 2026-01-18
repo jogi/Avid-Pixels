@@ -1,0 +1,521 @@
+// Variables (from jogi-blog)
+$color-gray: #b3b3b3;
+$color-light-gray: rgba(0, 0, 0, .4);
+$color-dark-gray: #45484d;
+$color-blue-black: #212226;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-yellow: #ffc336;
+$color-orange: #f26a3d;
+
+$color-primary: $color-orange;
+
+$border-color-black: rgba(0, 0, 0, .5);
+$border-color-white: rgba(255, 255, 255, .5);
+
+$font-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+// Basics
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $font-system;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.5em;
+    overflow-x: hidden;
+    color: $color-dark-gray;
+    text-rendering: optimizeLegibility;
+    padding-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+a {
+    font-weight: 400;
+    transition: all ease-out .2s;
+    text-decoration: none;
+    color: $color-blue-black;
+
+    &:hover {
+        color: #000;
+    }
+
+    &:focus {
+        color: #000;
+    }
+}
+
+p {
+    margin: 1.2em 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2.5em auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+// Footer
+footer {
+    font-size: .8em;
+    margin: 3em auto;
+    text-align: center;
+    color: $color-light-gray;
+    text-shadow: $color-white 0 1px 0;
+
+    p {
+        margin: 0 0 1em;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-light-gray;
+
+        &:hover {
+            transition: all ease-out .2s;
+            text-decoration: underline;
+            color: $color-blue-black;
+        }
+
+        &:focus {
+            transition: all ease-out .2s;
+            text-decoration: underline;
+            color: $color-blue-black;
+        }
+    }
+}
+
+// Container
+.container {
+    max-width: 800px;
+
+    .post {
+        padding: 3em 0;
+    }
+}
+
+// Navigation
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 1em;
+    line-height: 1em;
+    z-index: 1000;
+    width: 100%;
+    padding: 1.5em 0;
+    text-transform: none;
+    transition: all 0.3s ease;
+    background: transparent;
+
+    &.scrolled {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 1.2em 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+}
+
+.nav-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: $color-black;
+
+    a {
+        font-weight: inherit;
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.nav-right {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+// Blog Header
+.blog-header {
+    position: relative;
+    padding: 3em 0;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        height: 1px;
+        margin-left: -50%;
+        content: '';
+        background: $color-light-gray;
+    }
+}
+
+.blog-name {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+    position: relative;
+    z-index: 10;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: $color-black;
+
+    a {
+        font-weight: inherit;
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.blog-description {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    position: relative;
+    z-index: 10;
+    display: block;
+    margin: .25em 0;
+    padding: 0;
+    color: $color-dark-gray;
+}
+
+.blog-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+
+    a {
+        display: flex;
+        align-items: center;
+        opacity: .7;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        svg {
+            width: 1.2em;
+            height: 1.2em;
+            fill: $color-gray;
+        }
+
+        &:hover svg {
+            fill: $color-black;
+        }
+
+        span {
+            font-size: 1.2em;
+            color: $color-gray;
+        }
+    }
+}
+
+.nav-right {
+    .blog-icons {
+        a {
+            svg {
+                width: 1em;
+                height: 1em;
+            }
+
+            span {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+// Album-specific styles
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em 3em;
+    margin: 8rem auto 4rem;
+    max-width: 1400px;
+    padding: 0 4em;
+
+    .album-item {
+        text-align: center;
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: $color-black;
+
+            &:hover {
+                color: $color-dark-gray;
+            }
+        }
+
+        .album-thumbnail {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        .album-title {
+            font-size: 1.2em;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            color: inherit;
+        }
+    }
+}
+
+// Album single page
+.album {
+    position: relative;
+    z-index: 10;
+}
+
+.album-header {
+    text-align: center;
+    margin: 6em 0 3em;
+
+    h1 {
+        font-size: 3em;
+        font-weight: 700;
+        margin-bottom: .5em;
+        color: $color-black;
+    }
+
+    .album-description {
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: $color-dark-gray;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.album-photos {
+    margin: 4rem 0;
+
+    .photo-item {
+        margin-bottom: 6rem;
+
+        .photo-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: $color-black;
+        }
+
+        .photo-description {
+            font-size: 1em;
+            color: $color-dark-gray;
+            margin-bottom: 2rem;
+            line-height: 1.5em;
+        }
+
+        img {
+            width: 130%;
+            max-width: none;
+            margin-left: -15%;
+        }
+
+        a {
+            display: block;
+            border-bottom: none;
+        }
+    }
+}
+
+// Page layout
+.page {
+    position: relative;
+    z-index: 10;
+    padding: 8em 0 3em;
+}
+
+.page-header {
+    text-align: center;
+    margin: 2em 0;
+
+    h1 {
+        font-size: 1.5em;
+        font-weight: 600;
+        color: $color-black;
+    }
+}
+
+.page-content {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: $color-dark-gray;
+
+    h2 {
+        font-size: 1.4em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 1.3em;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 1.2em 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 2.5em auto;
+    }
+
+    a {
+        border-bottom: 1px solid $color-primary;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+
+    ul, ol {
+        margin: 1.2em 0;
+        padding-left: 2em;
+    }
+
+    li {
+        margin: 0.5em 0;
+    }
+}
+
+// Media Queries - Smaller than 960px
+@media only screen and (max-width: 960px) {
+    .nav-inner {
+        padding: 0 2em;
+    }
+
+    .album-grid {
+        grid-template-columns: 1fr;
+        gap: 2em;
+        padding: 0 2em;
+        margin-top: 6rem;
+    }
+
+    .album-photos .photo-item img {
+        width: 115%;
+        margin-left: -7.5%;
+    }
+}
+
+// Media Queries - Smaller than 640px
+@media only screen and (max-width: 640px) {
+    html {
+        font-size: 50%;
+    }
+
+    .nav-inner {
+        padding: 0 1.5em;
+    }
+
+    .nav-title {
+        font-size: 1.1em;
+    }
+
+    .album-grid {
+        grid-template-columns: 1fr;
+        gap: 2em;
+        padding: 0 1.5em;
+        margin-top: 6rem;
+    }
+
+    .album-photos .photo-item img {
+        width: 100%;
+        margin-left: auto;
+    }
+}
+
+// Media Queries - Smaller than 480px
+@media only screen and (max-width: 480px) {
+    .inner {
+        padding: 0 16px;
+    }
+
+    .album-photos .photo-item img {
+        width: 100%;
+        margin-left: auto;
+    }
+}
