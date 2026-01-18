@@ -1,5 +1,16 @@
+# Hugo
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Node
+node_modules/
+package-lock.json
+
+# OS
 .DS_Store
+
+# Old Jekyll files (can be removed after cleanup)
 _site
 .sass-cache
 .jekyll-metadata
-albums
