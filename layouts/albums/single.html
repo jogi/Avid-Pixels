@@ -17,8 +17,8 @@
                 {{ if .description }}
                 <p class="photo-description">{{ .description }}</p>
                 {{ end }}
-                <a href="{{ .path_original }}" target="_blank">
-                    <img src="{{ .path_medium }}" alt="{{ .title }}" width="{{ .width }}" height="{{ .height }}">
+                <a href="{{ .path_original | relURL }}" target="_blank">
+                    <img src="{{ .path_medium | relURL }}" alt="{{ .title }}" width="{{ .width }}" height="{{ .height }}">
                 </a>
             </div>
             {{ end }}
