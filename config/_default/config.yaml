@@ -1,0 +1,38 @@
+baseurl: /
+languageCode: en-us
+title: Avid Pixels
+enableRobotsTXT: true
+disableAliases: true
+
+pagination:
+  pagerSize: 12
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: monokai
+    lineNos: false
+    noClasses: false
+
+params:
+  name: Vashishtha Jogi
+  author: Vashishtha Jogi
+  description: Travel diary of an avid photographer
+  bio: Travel diary of an avid photographer
+  email: vashishthajogi@gmail.com
+  mainSections:
+    - albums
+
+outputFormats:
+  json:
+    mediaType: application/json
+    baseName: index
+    isPlainText: true
+
+outputs:
+  home:
+    - HTML
+  page:
+    - HTML
