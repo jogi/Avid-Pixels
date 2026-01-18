@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="container">
+    <article class="album">
+        <header class="album-header">
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.description }}
+            <p class="album-description">{{ . }}</p>
+            {{ end }}
+        </header>
+
+        <div class="album-photos">
+            {{ range .Params.images }}
+            <div class="photo-item">
+                {{ if .title }}
+                <h3 class="photo-title">{{ .title }}</h3>
+                {{ end }}
+                {{ if .description }}
+                <p class="photo-description">{{ .description }}</p>
+                {{ end }}
+                <a href="{{ .path_original }}" target="_blank">
+                    <img src="{{ .path_medium }}" alt="{{ .title }}" width="{{ .width }}" height="{{ .height }}">
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </article>
+</div>
+{{ end }}

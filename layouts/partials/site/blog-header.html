@@ -1,0 +1,7 @@
+<header class="blog-header">
+    <div class="inner">
+        <h1 class="blog-name"><a href='{{ .Site.BaseURL }}'>{{ .Site.Params.name }}</a></h1>
+        <p class="blog-description">{{ .Site.Params.bio | markdownify }}</p>
+        {{ partial "site/social-icons.html" . }}
+    </div>
+</header>

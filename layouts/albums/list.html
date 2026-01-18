@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="album-grid">
+    {{ range .Pages }}
+    <div class="album-item">
+        <a href="{{ .Permalink }}">
+            <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="album-thumbnail">
+            <h3 class="album-title">{{ .Title }}</h3>
+        </a>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

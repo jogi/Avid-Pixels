@@ -1,0 +1,7 @@
+{{- $normalize := resources.Get "css/normalize.css" -}}
+{{- $skeleton := resources.Get "css/skeleton.css" -}}
+{{- $CSS := slice $normalize $skeleton | resources.Concat "css/site.css" | minify }}
+<link rel="stylesheet" href="{{ $CSS.RelPermalink }}" media="all">
+
+{{ $s := resources.Get "sass/app.scss" | toCSS | postCSS (dict "config" "postcss.config.js") | minify }}
+<link rel="stylesheet" href="{{ $s.RelPermalink }}" />

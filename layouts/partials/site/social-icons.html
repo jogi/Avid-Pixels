@@ -1,0 +1,5 @@
+<div class="blog-icons">
+	{{ range .Site.Menus.social }}
+	<a href="{{ .URL | absURL }}">{{ .Pre | safeHTML }}<span class="hidden">{{ .Name | safeHTML }}</span></a>
+	{{ end }}
+</div>
