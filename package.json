@@ -1,0 +1,19 @@
+{
+  "name": "avid-pixels",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hugo",
+    "build:preview": "hugo --buildDrafts --buildFuture",
+    "server": "hugo server"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss-cli": "^11.0.0"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "> 1%",
+    "not dead"
+  ]
+}
