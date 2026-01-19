@@ -462,6 +462,178 @@ footer {
     }
 }
 
+// EXIF Display
+.photo-wrapper {
+    position: relative;
+    text-align: center;
+
+    a {
+        display: block;
+    }
+
+    img {
+        margin-bottom: 0;
+    }
+
+    .exif-toggle {
+        display: block;
+        margin: 0.5rem auto 0;
+        background: none;
+        border: none;
+        padding: 0;
+        font-size: 0.75em;
+        font-weight: 400;
+        color: $color-gray;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.3s ease, color 0.2s ease;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-black;
+            text-decoration: underline;
+        }
+    }
+
+    &:hover .exif-toggle {
+        opacity: 1;
+    }
+}
+
+.exif-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.exif-content {
+    background: $color-white;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+    h3 {
+        font-size: 1.1em;
+        font-weight: 400;
+        margin: 0 0 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        color: $color-dark-gray;
+    }
+
+    .exif-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 1.8em;
+        line-height: 1;
+        color: $color-gray;
+        cursor: pointer;
+        padding: 0.5rem;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: $color-dark-gray;
+        }
+    }
+}
+
+.exif-summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.exif-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    .exif-label {
+        font-size: 0.6em;
+        color: $color-gray;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-weight: 400;
+    }
+
+    .exif-value {
+        font-size: 0.75em;
+        font-weight: 400;
+        color: $color-black;
+    }
+}
+
+.exif-show-all {
+    display: block;
+    width: 100%;
+    background: none;
+    color: $color-gray;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0.8rem 0;
+    font-size: 0.75em;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: $color-black;
+    }
+}
+
+.exif-full {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.exif-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.exif-row {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.75em;
+    line-height: 1.4;
+}
+
+.exif-key {
+    font-weight: 400;
+    color: $color-gray;
+    white-space: nowrap;
+
+    &:after {
+        content: " -";
+        margin-left: 0.2rem;
+    }
+}
+
+.exif-val {
+    color: $color-dark-gray;
+    word-break: break-word;
+}
+
 // Media Queries - Smaller than 960px
 @media only screen and (max-width: 960px) {
     .nav-inner {
@@ -478,6 +650,11 @@ footer {
     .album-photos .photo-item img {
         width: 115%;
         margin-left: -7.5%;
+    }
+
+    // Show EXIF button always visible on tablets/touch devices
+    .photo-wrapper .exif-toggle {
+        opacity: 1;
     }
 }
 
@@ -506,6 +683,20 @@ footer {
         width: 100%;
         margin-left: auto;
     }
+
+    .exif-content {
+        padding: 1.5rem;
+    }
+
+    .exif-summary {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .photo-wrapper .exif-toggle {
+        opacity: 1;
+        font-size: 0.75em;
+    }
 }
 
 // Media Queries - Smaller than 480px
@@ -517,5 +708,12 @@ footer {
     .album-photos .photo-item img {
         width: 100%;
         margin-left: auto;
+    }
+}
+
+// Touch devices / devices that can't hover
+@media (hover: none) {
+    .photo-wrapper .exif-toggle {
+        opacity: 1;
     }
 }

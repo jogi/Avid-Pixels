@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "hugo",
-    "build:preview": "hugo --buildDrafts --buildFuture",
+    "prebuild": ".venv/bin/python3 _misc/extract_exif.py",
+    "build": "npm run prebuild && hugo",
+    "build:preview": "npm run prebuild && hugo --buildDrafts --buildFuture",
     "server": "hugo server"
   },
   "dependencies": {

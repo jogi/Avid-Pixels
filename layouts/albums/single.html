@@ -9,7 +9,7 @@
         </header>
 
         <div class="album-photos">
-            {{ range .Params.images }}
+            {{ range $index, $image := .Params.images }}
             <div class="photo-item">
                 {{ if .title }}
                 <h3 class="photo-title">{{ .title }}</h3>
@@ -17,9 +17,79 @@
                 {{ if .description }}
                 <p class="photo-description">{{ .description }}</p>
                 {{ end }}
-                <a href="{{ .path_original | absURL }}" target="_blank">
-                    <img src="{{ .path_medium | absURL }}" alt="{{ .title }}" width="{{ .width }}" height="{{ .height }}">
-                </a>
+                <div class="photo-wrapper">
+                    <a href="{{ .path_original | absURL }}" target="_blank">
+                        <img src="{{ .path_medium | absURL }}" alt="{{ .title }}" width="{{ .width }}" height="{{ .height }}">
+                    </a>
+                    {{ if .exif }}
+                    <button class="exif-toggle" data-photo-index="{{ $index }}">Show EXIF</button>
+                    {{ end }}
+                </div>
+                {{ if .exif }}
+                <div class="exif-modal" id="exif-{{ $index }}" style="display: none;">
+                    <div class="exif-content">
+                        <button class="exif-close">&times;</button>
+                        <h3>Camera settings</h3>
+                        <div class="exif-summary">
+                            {{ if .exif.camera }}
+                            <div class="exif-item">
+                                <div class="exif-label">Camera</div>
+                                <div class="exif-value">{{ .exif.camera }}</div>
+                            </div>
+                            {{ end }}
+                            {{ if .exif.lens }}
+                            <div class="exif-item">
+                                <div class="exif-label">Lens</div>
+                                <div class="exif-value">{{ .exif.lens }}</div>
+                            </div>
+                            {{ end }}
+                            {{ if .exif.aperture }}
+                            <div class="exif-item">
+                                <div class="exif-label">Aperture</div>
+                                <div class="exif-value">{{ .exif.aperture }}</div>
+                            </div>
+                            {{ end }}
+                            {{ if .exif.focal_length }}
+                            <div class="exif-item">
+                                <div class="exif-label">Focal Length</div>
+                                <div class="exif-value">{{ .exif.focal_length }}</div>
+                            </div>
+                            {{ end }}
+                            {{ if .exif.shutter_speed }}
+                            <div class="exif-item">
+                                <div class="exif-label">Shutter Speed</div>
+                                <div class="exif-value">{{ .exif.shutter_speed }}</div>
+                            </div>
+                            {{ end }}
+                            {{ if .exif.iso }}
+                            <div class="exif-item">
+                                <div class="exif-label">ISO</div>
+                                <div class="exif-value">{{ .exif.iso }}</div>
+                            </div>
+                            {{ end }}
+                            {{ if isset .exif "flash_fired" }}
+                            <div class="exif-item">
+                                <div class="exif-label">Flash</div>
+                                <div class="exif-value">{{ if .exif.flash_fired }}Fired{{ else }}Did not fire{{ end }}</div>
+                            </div>
+                            {{ end }}
+                        </div>
+                        {{ if .exif_all }}
+                        <button class="exif-show-all" data-photo-index="{{ $index }}">Show all EXIF</button>
+                        <div class="exif-full" id="exif-full-{{ $index }}" style="display: none;">
+                            <div class="exif-table">
+                                {{ range $key, $value := .exif_all }}
+                                <div class="exif-row">
+                                    <div class="exif-key">{{ $key }}</div>
+                                    <div class="exif-val">{{ $value }}</div>
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
             </div>
             {{ end }}
         </div>

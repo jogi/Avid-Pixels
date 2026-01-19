@@ -8,4 +8,101 @@ window.addEventListener('scroll', function() {
         nav.classList.remove('scrolled');
     }
 });
+
+// EXIF modal functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Show EXIF modal
+    const exifToggles = document.querySelectorAll('.exif-toggle');
+    exifToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            const photoIndex = this.getAttribute('data-photo-index');
+            const modal = document.getElementById('exif-' + photoIndex);
+            if (modal) {
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    // Close EXIF modal
+    const exifCloses = document.querySelectorAll('.exif-close');
+    exifCloses.forEach(function(close) {
+        close.addEventListener('click', function() {
+            const modal = this.closest('.exif-modal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+                // Hide expanded full EXIF if visible
+                const fullExif = modal.querySelector('.exif-full');
+                if (fullExif && fullExif.style.display === 'block') {
+                    fullExif.style.display = 'none';
+                    const showAllBtn = modal.querySelector('.exif-show-all');
+                    if (showAllBtn) {
+                        showAllBtn.textContent = 'Show all EXIF';
+                    }
+                }
+            }
+        });
+    });
+
+    // Close modal when clicking outside
+    const exifModals = document.querySelectorAll('.exif-modal');
+    exifModals.forEach(function(modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+                // Hide expanded full EXIF if visible
+                const fullExif = modal.querySelector('.exif-full');
+                if (fullExif && fullExif.style.display === 'block') {
+                    fullExif.style.display = 'none';
+                    const showAllBtn = modal.querySelector('.exif-show-all');
+                    if (showAllBtn) {
+                        showAllBtn.textContent = 'Show all EXIF';
+                    }
+                }
+            }
+        });
+    });
+
+    // Show all EXIF data
+    const showAllBtns = document.querySelectorAll('.exif-show-all');
+    showAllBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const photoIndex = this.getAttribute('data-photo-index');
+            const fullExif = document.getElementById('exif-full-' + photoIndex);
+            if (fullExif) {
+                if (fullExif.style.display === 'none' || fullExif.style.display === '') {
+                    fullExif.style.display = 'block';
+                    this.textContent = 'Hide all EXIF';
+                } else {
+                    fullExif.style.display = 'none';
+                    this.textContent = 'Show all EXIF';
+                }
+            }
+        });
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            exifModals.forEach(function(modal) {
+                if (modal.style.display === 'flex') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                    // Hide expanded full EXIF if visible
+                    const fullExif = modal.querySelector('.exif-full');
+                    if (fullExif && fullExif.style.display === 'block') {
+                        fullExif.style.display = 'none';
+                        const showAllBtn = modal.querySelector('.exif-show-all');
+                        if (showAllBtn) {
+                            showAllBtn.textContent = 'Show all EXIF';
+                        }
+                    }
+                }
+            });
+        }
+    });
+});
 </script>
