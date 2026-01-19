@@ -717,3 +717,214 @@ footer {
         opacity: 1;
     }
 }
+
+// Dark mode
+@media (prefers-color-scheme: dark) {
+    // Dark mode color overrides
+    $dm-bg: #1a1a1a;
+    $dm-bg-elevated: #242424;
+    $dm-text: #e0e0e0;
+    $dm-text-muted: #a0a0a0;
+    $dm-border: rgba(255, 255, 255, 0.1);
+
+    body {
+        background-color: $dm-bg;
+        color: $dm-text;
+    }
+
+    // Links
+    a {
+        color: $dm-text;
+
+        &:hover, &:focus {
+            color: $color-white;
+        }
+    }
+
+    // Headings
+    h1, h2, h3, h4 {
+        color: $dm-text;
+    }
+
+    // Navigation
+    .main-nav {
+        &.scrolled {
+            background: rgba(26, 26, 26, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    .nav-title {
+        color: $color-white;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    // Footer
+    footer {
+        color: $dm-text-muted;
+        text-shadow: none;
+
+        a {
+            color: $dm-text-muted;
+
+            &:hover, &:focus {
+                color: $dm-text;
+            }
+        }
+    }
+
+    // Blog sections
+    .blog-header {
+        &::after {
+            background: $dm-border;
+        }
+    }
+
+    .blog-name {
+        color: $color-white;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    .blog-description {
+        color: $dm-text;
+    }
+
+    .blog-icons {
+        a {
+            svg {
+                fill: $dm-text-muted;
+            }
+
+            &:hover svg {
+                fill: $color-white;
+            }
+
+            span {
+                color: $dm-text-muted;
+            }
+        }
+    }
+
+    // Album grid
+    .album-grid {
+        .album-item {
+            a {
+                color: $dm-text;
+
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    // Album pages
+    .album-header {
+        h1 {
+            color: $color-white;
+        }
+
+        .album-description {
+            color: $dm-text;
+        }
+    }
+
+    .album-photos {
+        .photo-item {
+            .photo-title {
+                color: $color-white;
+            }
+
+            .photo-description {
+                color: $dm-text;
+            }
+        }
+    }
+
+    // Page content
+    .page-header h1 {
+        color: $color-white;
+    }
+
+    .page-content {
+        color: $dm-text;
+
+        h2, h3 {
+            color: $color-white;
+        }
+
+        a {
+            border-bottom-color: $color-primary;
+
+            &:hover, &:focus {
+                color: $color-primary;
+            }
+        }
+    }
+
+    // EXIF display
+    .photo-wrapper {
+        .exif-toggle {
+            color: $dm-text-muted;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+
+    .exif-modal {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .exif-content {
+        background: $dm-bg-elevated;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+
+        h3 {
+            color: $color-white;
+            border-bottom-color: $dm-border;
+        }
+
+        .exif-close {
+            color: $dm-text-muted;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+
+    .exif-item {
+        .exif-label {
+            color: $dm-text-muted;
+        }
+
+        .exif-value {
+            color: $dm-text;
+        }
+    }
+
+    .exif-show-all {
+        color: $dm-text-muted;
+        border-top-color: $dm-border;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    .exif-key {
+        color: $dm-text-muted;
+    }
+
+    .exif-val {
+        color: $dm-text;
+    }
+}
