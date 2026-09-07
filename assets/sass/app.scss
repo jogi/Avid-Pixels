@@ -169,7 +169,8 @@ footer {
 
 .nav-title {
     font-size: 1.3em;
-    font-weight: 600;
+    font-weight: 500;
+    letter-spacing: -.02em;
     line-height: 1.2em;
     margin: 0;
     padding: 0;
@@ -329,8 +330,8 @@ footer {
 
         .album-title {
             font-size: 1.2em;
-            font-weight: 300;
-            letter-spacing: 0.02em;
+            font-weight: 400;
+            letter-spacing: 0;
             color: inherit;
         }
     }
@@ -348,7 +349,8 @@ footer {
 
     h1 {
         font-size: 3em;
-        font-weight: 700;
+        font-weight: 500;
+        letter-spacing: -.025em;
         margin-bottom: .5em;
         color: $color-black;
     }
@@ -370,7 +372,8 @@ footer {
 
         .photo-title {
             font-size: 1.4em;
-            font-weight: 600;
+            font-weight: 500;
+            letter-spacing: -.01em;
             margin-bottom: 0.5rem;
             color: $color-black;
         }
@@ -482,7 +485,10 @@ footer {
         border: none;
         padding: 0;
         font-size: 0.75em;
+        font-family: inherit;
         font-weight: 400;
+        text-transform: none;
+        letter-spacing: 0;
         color: $color-gray;
         cursor: pointer;
         opacity: 0;
@@ -526,7 +532,8 @@ footer {
 
     h3 {
         font-size: 1.1em;
-        font-weight: 400;
+        font-weight: 500;
+        letter-spacing: -.01em;
         margin: 0 0 1.5rem;
         padding-bottom: 1rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -567,8 +574,8 @@ footer {
     .exif-label {
         font-size: 0.6em;
         color: $color-gray;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
+        text-transform: none;
+        letter-spacing: 0;
         font-weight: 400;
     }
 
@@ -588,7 +595,10 @@ footer {
     border-top: 1px solid rgba(0, 0, 0, 0.08);
     padding: 0.8rem 0;
     font-size: 0.75em;
+    font-family: inherit;
     font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
     cursor: pointer;
     text-align: center;
     transition: color 0.2s ease;
