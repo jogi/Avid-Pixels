@@ -56,6 +56,8 @@ jobs:
           hugo \
           --minify \
           --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Validate album cover URLs
+        run: python3 _misc/check_album_covers.py public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

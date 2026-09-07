@@ -3,10 +3,10 @@
 {{- $medium := printf "%s/album_thumb-1440.jpg" $directory -}}
 {{- $large := printf "%s/album_thumb-2160.jpg" $directory -}}
 {{- if and (fileExists (printf "static%s" $medium)) (fileExists (printf "static%s" $large)) -}}
-<img src="{{ $medium | absURL }}"
-     srcset="{{ $thumbnail | absURL }} 864w, {{ $medium | absURL }} 1440w, {{ $large | absURL }} 2160w"
+<img src="{{ $medium | relURL }}"
+     srcset="{{ $thumbnail | relURL }} 864w, {{ $medium | relURL }} 1440w, {{ $large | relURL }} 2160w"
      sizes="(max-width: 640px) calc(100vw - 43.2px), (max-width: 960px) calc(100vw - 72px), (max-width: 1544px) calc((100vw - 198px) / 2), 673px"
      alt="{{ .Title }}" class="album-thumbnail">
 {{- else -}}
-<img src="{{ $thumbnail | absURL }}" alt="{{ .Title }}" class="album-thumbnail">
+<img src="{{ $thumbnail | relURL }}" alt="{{ .Title }}" class="album-thumbnail">
 {{- end -}}
